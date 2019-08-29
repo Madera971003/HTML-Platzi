@@ -1,3 +1,5 @@
+
+/*Principales estilos de body y header de inicio de sesión y registro*/
 body{
     margin: 0;
     font-family: 'Muli', sans-serif;
@@ -16,7 +18,9 @@ body{
     margin-top: -2px;
     margin-left: 40px;
 }
-.login{
+
+/***Estilos de inicio de sesión*****/
+.login-register{
     background: linear-gradient(#21c08b, #ab88ff);
     display: flex;
     align-items: center;
@@ -25,7 +29,7 @@ body{
     padding: 0px 30px;
     min-height: calc(100vh - 200px);
 }
-.login__container{
+.login-register__container{
     background-color: rgba(255,255,255,0.1);
     border: 2px solid white;
     border-radius: 40px;
@@ -33,14 +37,20 @@ body{
     padding: 60px 68px 40px;
     min-height: 700px;
     width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
 }
-.login__container--form{
+
+.login-register__container--form{
     display: flex;
     flex-direction: column;
 }
-.login__conteiner--form label{
+.login-register__container--form label{
     font-size: 14px;
 }
+
+/*Estilos solo para login*/
 .login__container--remember-me{
     color: white;
     display: flex;
@@ -65,6 +75,8 @@ body{
     width: 35px;
     margin: 2px;
 }
+
+/*Estilos para la etiqueta "a" de login*/
 .login__container--register{
     font-size: 14px;
 }
@@ -77,6 +89,25 @@ body{
 .login__container--register a:hover{
     text-decoration: underline;
 }
+
+/*Estilos para la etiqueta "a" de register*/
+.register__container--register{
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+}
+.register__container--register a{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+.register__container--register a:hover{
+    text-decoration: underline;
+}
+
+/*Estilos generales*/
 .input{
     background-color: transparent;
     border-left: 0px;
@@ -105,4 +136,22 @@ body{
     height: 50px;
     letter-spacing: 1px;
     margin: 10px 0px;
+}
+/*Principales estilos de Inicio de sesión y registro*/
+.footer{
+    background-color: #ab88ff;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.footer a{
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
 }
